@@ -25,16 +25,9 @@
   height: 2px;
   margin-bottom: 8.5px;
   background-color: $white;
-  transition: transform .2s ease-out, opacity .2s ease-out;
 
   &:nth-child(3) {
     width: 21px;
     margin-right: auto;
-  }
-
-  &:nth-child(1),
-  &:nth-child(3) {
-    transform-origin: right;
-    transition: width .2s ease-out;
   }
 }
