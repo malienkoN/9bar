@@ -1,2 +1,10 @@
+@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+
 @import 'colors';
+@import 'fonts';
 @import 'general';
+
+@import 'blocks/header';
+@import 'blocks/burger';
+@import 'blocks/action';
+@import 'blocks/dropdown';

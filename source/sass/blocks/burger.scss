@@ -1,0 +1,40 @@
+.burger {
+  margin-right: 2rem;
+  display: block;
+  width: 42px;
+  height: 23px;
+
+  position: relative;
+  padding: 0;
+  border: none;
+
+  font-size: 0;
+  color: transparent;
+
+  background: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.burger__line {
+  display: block;
+  width: 42px;
+  height: 2px;
+  margin-bottom: 8.5px;
+  background-color: $white;
+  transition: transform .2s ease-out, opacity .2s ease-out;
+
+  &:nth-child(3) {
+    width: 21px;
+    margin-right: auto;
+  }
+
+  &:nth-child(1),
+  &:nth-child(3) {
+    transform-origin: right;
+    transition: width .2s ease-out;
+  }
+}
