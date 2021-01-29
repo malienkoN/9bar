@@ -61,22 +61,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.btn {
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  text-decoration: none;
-
-  svg {
-    display: block;
-  }
-
-  &:focus {
-    outline: none;
-  }
-}

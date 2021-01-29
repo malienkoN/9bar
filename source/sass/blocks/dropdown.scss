@@ -1,10 +1,30 @@
 .dropdown {
   display: none;
 
-  padding: 1rem 0;
-  width: 23.8rem;
-  background-color: $blue;
+  width: 23.2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: $white;
   position: absolute;
   top: 130%;
-  left: 0;
+  left: -9%;
+}
+
+.dropdown__item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.dropdown__icon {
+  margin-right: 1rem;
+  fill: $blue;
+}
+
+.dropdown__link {
+  color: $blue;
 }

@@ -1,7 +1,12 @@
 .header {
   padding-top: 2rem;
-  background-color: $blue;
+  background: none;
   color: $white;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__inner {
