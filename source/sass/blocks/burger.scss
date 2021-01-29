@@ -5,6 +5,7 @@
   height: 23px;
 
   position: relative;
+  z-index: 11;
   padding: 0;
   border: none;
 
@@ -25,9 +26,36 @@
   height: 2px;
   margin-bottom: 8.5px;
   background-color: $white;
+  transition: transform .3s ease-out;
 
   &:nth-child(3) {
     width: 21px;
     margin-right: auto;
   }
+
+  &:nth-child(3) {
+    transform-origin: left;
+    transition: width .3s ease-out;
+  }
+}
+
+.burger.active .burger__line:nth-child(3) {
+  width: 0;
+}
+
+.burger.active .burger__line:nth-child(1),
+.burger.active .burger__line:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform-origin: center;
+  background-color: $blue;
+}
+
+.burger.active .burger__line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.burger.active .burger__line:nth-child(2) {
+  transform: rotate(-45deg);
 }

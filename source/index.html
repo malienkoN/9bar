@@ -18,22 +18,23 @@
                         <span class="burger__line">3</span>
                     </button>
 
-                    <a href="index.html">
-                        <img class="img" src="img/logo.png" alt="9 Бар">
+                    <a class="header__logo-link" href="index.html">
+                        <img class="header__logo img" src="img/logo.png" alt="9 Бар">
+                        <img class="header__logo header__logo--second img" src="img/logo-black.png" alt="9 Бар">
                     </a>
                 </div>
 
                 <div class="header__right">
 
                     <ul class="action">
-                        <li class="action__item">
+                        <li class="action__item has-dropdown">
                             <!-- has-drop-down -->
-                            <a class="action__link" href="tel:0933758828">
+                            <a class="action__link action__link-dropdown" href="tel:0933758828">
                                 <svg class="action__icon" width="20" height="20" viewBox="0 0 20 20">
                                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                                 </svg>
                                 +38 (093) 375 8828
-                                <svg class="action__icon" width="11.243" height="6.942" viewBox="0 0 11.243 6.942">
+                                <svg class="action__icon action__icon-dropdown" width="11.243" height="6.942" viewBox="0 0 11.243 6.942">
                                     <use xlink:href="img/sprite.svg#icon-drop-down"></use>
                                 </svg>
                             </a>
@@ -111,16 +112,7 @@
 
 <!-- Modals -->
 <div class="modal" id="menuModal">
-    <div class="container">
-        <div class="modal__header">
-            <button class="modal__close" type="button" aria-label="Закрыть">
-                <span class="modal__close-item">Закрыть</span>
-            </button>
-
-            <a href="index.html">
-                <img class="img" src="img/logo-black.png" alt="9 Бар">
-            </a>
-        </div>
+    <div class="container-modal">
 
         <div class="modal__content">
             <nav class="nav">

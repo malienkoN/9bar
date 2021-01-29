@@ -22,6 +22,10 @@
   }
 }
 
+.action__item.has-dropdown {
+  position: relative;
+}
+
 .action__icon {
   margin-right: 1rem;
 
@@ -29,6 +33,14 @@
     margin-right: 0;
     margin-left: 1rem;
   }
+}
+
+.action__icon-dropdown {
+  transition: transform .2s linear;
+}
+
+.action__icon-dropdown.rotate {
+  transform: rotate(180deg);
 }
 
 .action__lang-item {

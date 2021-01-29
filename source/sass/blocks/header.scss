@@ -14,3 +14,28 @@
   display: flex;
   align-items: center;
 }
+
+.header__logo-link {
+  position: relative;
+}
+
+.header__logo {
+  transition: opacity .3s ease-out;
+}
+
+.header__logo--second {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 11;
+}
+
+.header__logo--first.hide {
+  opacity: 0;
+}
+
+.header__logo--second.show {
+  opacity: 1;
+}
+
