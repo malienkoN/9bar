@@ -1,0 +1,39 @@
+.connection {
+  width: 7.2rem;
+  height: 24.6rem;
+  background-color: $blue;
+  border-radius: 1rem 0 0 1rem;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 2;
+}
+
+.connection__list {
+  padding-left: 12.5px;
+  padding-right: 11.5px;
+  height: 100%;
+}
+
+.connection__item {
+  padding: 2.7rem 0;
+  border-bottom: 1px solid #02569a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:last-of-type {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  &:nth-of-type(2) {
+    padding-bottom: 2.2rem;
+  }
+}
+
+.connection__link {
+  display: flex;
+  align-items: center;
+}

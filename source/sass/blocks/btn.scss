@@ -18,6 +18,9 @@
 }
 
 .btn--default {
+  display: flex;
+  align-items: center;
+
   padding: 1.3rem 2.5rem 1.4rem 3.2rem;
   font-size: 1.4rem;
   line-height: 1.1;
@@ -38,13 +41,14 @@
   }
 
   &:hover svg {
-    transform: rotate(-360deg);
+    transform: translateX(.2rem);
   }
 }
 
 .btn--transparent {
   border: 2px solid $blue;
   background-color: transparent;
+  transition: backdrop-filter .2s linear;
 
   &:hover {
     background-color: transparent;

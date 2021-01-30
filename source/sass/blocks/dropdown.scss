@@ -6,8 +6,9 @@
   padding: 2rem;
   background-color: $white;
   position: absolute;
-  top: 130%;
+  top: 140%;
   left: -9%;
+  z-index: 2;
 }
 
 .dropdown__item {
