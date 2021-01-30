@@ -10,6 +10,7 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.header__logo--first').toggleClass('hide');
         $('.header__logo--second').toggleClass('show');
+        $('.header__right').fadeToggle();
         $('body').toggleClass('lock');
         menuModal.toggleClass('show');
     });
@@ -21,6 +22,7 @@ $(document).ready(function () {
             $(navToggle).toggleClass('active');
             $('.header__logo--first').toggleClass('hide');
             $('.header__logo--second').toggleClass('show');
+            $('.header__right').fadeToggle();
             $('body').toggleClass('lock');
             menuModal.toggleClass('show');
         }
@@ -33,19 +35,6 @@ $(document).ready(function () {
         $('.dropdown').fadeToggle();
         $('.action__icon-dropdown').toggleClass('rotate');
     });
-
-    // /* Smooth scroll */
-    // $('.intro__scroll-down').click(function (event) {
-    //     event.preventDefault();
-    //
-    //     $('html, body').animate({
-    //         scrollTop: $($(this).attr('href')).offset().top + 'px'
-    //     }, {
-    //         duration: 1000,
-    //         easing: 'swing'
-    //     });
-    //     return false;
-    // })
 });
 
 {
