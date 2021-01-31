@@ -10,6 +10,18 @@
   background-size: cover;
 }
 
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  background: url('../img/intro-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
 .intro__video {
   position: absolute;
   top: 0;
@@ -22,6 +34,16 @@
 
 .intro__content {
   z-index: 1;
+  width: 100%;
+}
+
+.intro__content .container {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro__title {
