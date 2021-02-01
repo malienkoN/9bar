@@ -1,0 +1,72 @@
+.benefits__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-column-gap: 2.4rem;
+}
+
+.benefits__item {
+  position: relative;
+}
+
+.benefits__item:first-of-type:before {
+  content: '';
+  display: block;
+  width: 950px;
+  height: 328px;
+  background: linear-gradient(to bottom,#007adc 0,#1d98fa 100%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.benefits__span {
+  text-transform: uppercase;
+  color: $white;
+  font-size: 3rem;
+  font-weight: 700;
+
+  position: absolute;
+  z-index: 1;
+
+  &:first-of-type {
+    left: 0;
+    top: 0;
+  }
+
+  &:last-of-type {
+    right: 2.4rem;
+    bottom: 0;
+  }
+}
+
+.benefits__list-item {
+  padding-left: 7rem;
+  position: relative;
+
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 2.9rem;
+    height: .9rem;
+
+    background: url('../img/wave-single.png') center no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}

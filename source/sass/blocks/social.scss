@@ -1,7 +1,39 @@
 .social {
-  justify-content: flex-end;
+  display: flex;
+}
+
+.social__list {
+
+  &:first-of-type {
+    margin-right: 7.7rem;
+  }
 }
 
 .social__icon {
+  margin-right: 1.7rem;
   fill: $blue;
+
+  &--viber {
+    margin-right: 1rem;
+  }
+
+  &--telegram {
+    margin-right: .7rem;
+  }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+
+  font-size: 2rem;
+  font-weight: 700;
+  color: $blue;
+
+  margin-bottom: .4rem;
+}
+
+.social__items-bottom {
+  display: flex;
+  justify-content: space-between;
 }

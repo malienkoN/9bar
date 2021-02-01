@@ -103,7 +103,7 @@
     </header>
 
     <section class="intro">
-        <video class="intro__video" src="img/intro-video.mp4" autoplay muted loop></video>
+<!--        <video class="intro__video" src="img/intro-video.mp4" autoplay muted loop></video>-->
 
         <div class="intro__content">
             <div class="container">
@@ -175,41 +175,67 @@
     </div>
 
     <!-- About -->
-    <section class="section" id="about">
+    <section class="section section--about" id="about">
         <div class="container">
+            <h2 class="title">
+                О компании
+                <span class="title__sub">О компании</span>
+            </h2>
+
             <div class="about">
-                <div class="about__item">
-                    <h2 class="title">
-                        О компании
-                        <span class="title__sub">О компании</span>
-                    </h2>
-                    <p class="about__text">
-                        Наша торгово-монтажная компания по установке кондиционеров «9 БАР» предоставляет свои услуги для тех, кто предпочитает создать самые комфортные условия в своем доме.
-                    </p>
+                <div class="about__inner">
+                    <div class="about__item">
+                        <p class="about__text">
+                            Наша торгово-монтажная компания по&nbsp;установке кондиционеров &laquo;9&nbsp;БАР&raquo; предоставляет свои услуги для тех, кто предпочитает создать самые комфортные условия в&nbsp;своем доме.
+                        </p>
 
-                    <div class="about__title-list">Мы - это:</div>
-                    <ul class="about__list">
-                        <li class="about__list-item">профессионалы своего дела;</li>
-                        <li class="about__list-item">ответственный и грамотный подход к клиентам;</li>
-                        <li class="about__list-item">Бесплатная консультация по выбору и монтажу систем вентилирования пространства в квартирах;</li>
-                        <li class="about__list-item">оперативная обработка заявок и не только.</li>
-                        <li class="about__list-item">Мы готовы предложить массу оригинальных идей, каждая из которых будет уникальной.</li>
-                    </ul>
+                        <div class="about__title-list">Мы - это:</div>
+                        <ul class="about__list">
+                            <li class="about__list-item">профессионалы своего дела;</li>
+                            <li class="about__list-item">ответственный и грамотный подход к клиентам;</li>
+                            <li class="about__list-item">Бесплатная консультация по выбору и монтажу систем вентилирования пространства в квартирах;</li>
+                            <li class="about__list-item">оперативная обработка заявок и не только.</li>
+                            <li class="about__list-item">Мы готовы предложить массу оригинальных идей, каждая из которых будет уникальной.</li>
+                        </ul>
+                    </div>
+
+                    <div class="about__item">
+                        <img class="about__img img" src="img/about-team.jpg" width="559" height="479" alt="Команда">
+                        <p class="about__text-img">команда</p>
+                    </div>
                 </div>
-                
-                <div class="about__item">
-                    <img class="img" src="img/about-team.jpg" width="559" height="479" alt="Команда">
-                </div>
+
+                <button class="about__btn btn btn--default" type="button">
+                    Подробнее о компании
+                    <svg width="19" height="8" viewBox="0 0 19 8">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
             </div>
-
-            <button class="btn btn--default" type="button">
-                Подробнее о компании
-                <svg width="19" height="8" viewBox="0 0 19 8">
-                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                </svg>
-            </button>
         </div>
     </section>
+
+    <div class="benefits">
+        <div class="container">
+            <div class="benefits__inner">
+                <div class="benefits__item">
+                    <span class="benefits__span">с компанией</span>
+                    <img class="benefits__img img" src="img/logo-big.png" width="656" height="328" alt="9 Бар">
+                    <span class="benefits__span">вы получаете</span>
+                </div>
+
+                <div class="benefits__item">
+                    <ul class="benefits__list">
+                        <li class="benefits__list-item">Максимально энергоэффективные решения</li>
+                        <li class="benefits__list-item">Комплексное гарантийное обслуживание
+                            кондиционеров</li>
+                        <li class="benefits__list-item">Регламентное обслуживание и профилактика со
+                            скидками</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -221,100 +247,106 @@
 <div class="modal" id="menuModal">
     <div class="container-modal">
 
-        <div class="modal__content">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Главная</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">О нас</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Каталог</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Услуги</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Партнерам</a>
-                    </li>
-                </ul>
+        <div class="modal__inner">
+            <div class="modal__item">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Партнерам</a>
+                        </li>
+                    </ul>
 
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Наши работы</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Отзывы</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Новости</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Вакансии</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Наши работы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-            <div class="social">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link" href="mailto:info@9bar.dp.ua">
-                            <svg class="social__icon" width="19" height="15" viewBox="0 0 19 15">
-                                <use xlink:href="img/sprite.svg#icon-mail"></use>
-                            </svg>
-                            info@9bar.dp.ua
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="https://www.instagram.com/9bar_dp/?hl=cs" target="_blank">
-                            <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
-                                <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                            </svg>
-                            9bar_dp
-                        </a>
-                    </li>
-                </ul>
+            <div class="modal__item">
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="mailto:info@9bar.dp.ua">
+                                <svg class="social__icon" width="19" height="15" viewBox="0 0 19 15">
+                                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                                </svg>
+                                info@9bar.dp.ua
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://www.instagram.com/9bar_dp/?hl=cs" target="_blank">
+                                <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
+                                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                9bar_dp
+                            </a>
+                        </li>
+                    </ul>
 
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link" href="tel:0933758828">
-                            <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
-                                <use xlink:href="img/sprite.svg#icon-phone-social"></use>
-                            </svg>
-                            +38 (093) 375 8828
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="tel:0933758828">
-                            <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
-                                <use xlink:href="img/sprite.svg#icon-phone-social"></use>
-                            </svg>
-                            +38 (093) 375 8828
-                        </a>
-                    </li>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="tel:0933758828">
+                                <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
+                                    <use xlink:href="img/sprite.svg#icon-phone-social"></use>
+                                </svg>
+                                +38 (093) 375 8828
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="tel:0933758828">
+                                <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
+                                    <use xlink:href="img/sprite.svg#icon-phone-social"></use>
+                                </svg>
+                                +38 (093) 375 8828
+                            </a>
+                        </li>
 
-                    <li class="social__item">
-                        <a class="social__link" href="https://www.instagram.com/9bar_dp/?hl=cs" target="_blank">
-                            <svg class="social__icon" width="21" height="23" viewBox="0 0 21 23">
-                                <use xlink:href="img/sprite.svg#icon-viber"></use>
-                            </svg>
-                            Viber
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="https://www.instagram.com/9bar_dp/?hl=cs" target="_blank">
-                            <svg class="social__icon" width="22" height="20" viewBox="0 0 22 20">
-                                <use xlink:href="img/sprite.svg#icon-telegram"></use>
-                            </svg>
-                            Telegram
-                        </a>
-                    </li>
-                </ul>
+                        <div class="social__items-bottom">
+                            <li class="social__item">
+                                <a class="social__link" href="viber://chat?number=380933758828" target="_blank">
+                                    <svg class="social__icon social__icon--viber" width="21" height="23" viewBox="0 0 21 23">
+                                        <use xlink:href="img/sprite.svg#icon-viber"></use>
+                                    </svg>
+                                    Viber
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://t.me/Ivan_mrgrdsk" target="_blank">
+                                    <svg class="social__icon social__icon--telegram" width="22" height="20" viewBox="0 0 22 20">
+                                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                                    Telegram
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

@@ -1,11 +1,13 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav__link {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 60px;
+  line-height: 1.25;
   font-weight: 700;
   color: $blue;
 }

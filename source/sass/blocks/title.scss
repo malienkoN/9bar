@@ -1,0 +1,40 @@
+.title {
+  padding-left: 6rem;
+
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4.9rem;
+  line-height: 1.2;
+  font-weight: 700;
+
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+
+    background: url('../img/waves-small.png') center no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+
+.title__sub {
+  font-size: 25.3rem;
+  line-height: 1.2;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(29, 152, 250, .15);
+
+  position: absolute;
+  top: -20%;
+  left: 5rem;
+  transform: translateY(-50%);
+  z-index: -1;
+}
