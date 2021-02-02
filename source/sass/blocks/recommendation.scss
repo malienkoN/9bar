@@ -1,0 +1,25 @@
+.recommendation {
+  margin-top: 10.6rem;
+  margin-bottom: 8.4rem;
+}
+
+.slick-list {
+  box-sizing: initial;
+  padding: 25px 0;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slick-next {
+  right: -4.5rem;
+}
+
+.slick-prev {
+  left: -4.5rem;
+}
