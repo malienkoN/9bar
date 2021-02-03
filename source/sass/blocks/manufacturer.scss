@@ -1,0 +1,40 @@
+.manufacturer {
+  padding: 4rem 10rem 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  width: auto;
+  margin: 0 -10rem;
+  background-color: #fafdff;
+  box-shadow: 0 6px 80px rgba(0, 0, 0, .16);
+  min-height: 474px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter .2s linear;
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .slick-next {
+    right: -7rem;
+  }
+
+  .slick-prev {
+    left: -7rem;
+  }
+}

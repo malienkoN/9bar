@@ -23,19 +23,11 @@
   position: relative;
 
   &:after {
-    content: '';
-    display: block;
-    width: 767px;
-    height: 555px;
+    @include waves;
 
-    background: url('../img/waves.png') center no-repeat;
-    background-size: contain;
-
-    position: absolute;
     right: -8.6rem;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
   }
 }
 

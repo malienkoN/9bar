@@ -1,0 +1,25 @@
+@mixin waves {
+  content: '';
+  display: block;
+  width: 767px;
+  height: 555px;
+
+  background: url('../img/waves.png') center no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  z-index: -2;
+}
+
+@mixin rectangle {
+  content: '';
+  display: block;
+  width: 940px;
+  height: 328px;
+  background: linear-gradient(to bottom, rgba(0,122,220,1) 0%, rgba(29,152,250,1) 100%);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}

@@ -14,16 +14,8 @@
 }
 
 .benefits__item:first-of-type:before {
-  content: '';
-  display: block;
-  width: 940px;
-  height: 328px;
-  background: linear-gradient(to bottom,#007adc 0,#1d98fa 100%);
-  position: absolute;
+  @include rectangle;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
 }
 
 .benefits__span {
