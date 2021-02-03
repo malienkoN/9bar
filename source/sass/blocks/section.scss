@@ -30,7 +30,7 @@
 
   &:before {
     left: -5.6rem;
-    top: -21rem;
+    top: -23.7rem;
   }
 
   &:after {
@@ -41,4 +41,22 @@
 
 .section--manufacturer {
   margin-bottom: 26rem;
+  position: relative;
+
+  &:before {
+    @include rectangle;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.section--services {
+  margin-bottom: 28.6rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    top: -23.7rem;
+    left: -7rem;
+  }
 }
