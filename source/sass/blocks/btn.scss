@@ -19,7 +19,10 @@
 
 .btn-wrap {
   display: flex;
-  justify-content: center;
+
+  &--center {
+    justify-content: center;
+  }
 }
 
 .btn--default {
