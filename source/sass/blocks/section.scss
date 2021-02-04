@@ -63,4 +63,22 @@
 
 .section--works {
   margin-bottom: 26rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    top: -16rem;
+    left: -7rem;
+  }
+}
+
+.section--news {
+  margin-bottom: 22rem;
+  position: relative;
+
+  &:after {
+    @include waves;
+    top: -30rem;
+    right: -9rem;
+  }
 }
