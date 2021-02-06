@@ -48,7 +48,7 @@
     background-color: darken($blue, 5%);
   }
 
-  &:hover svg {
+  &:hover .btn__icon-arrow {
     transform: translateX(.2rem);
   }
 }

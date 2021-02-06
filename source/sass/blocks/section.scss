@@ -82,3 +82,31 @@
     right: -9rem;
   }
 }
+
+.section--reviews {
+  margin-bottom: 8.5rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    top: -26.5rem;
+    left: -18.4rem;
+  }
+}
+
+.section--consultation {
+  margin-bottom: 3.2rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    left: -5.1rem;
+    bottom: -20.2rem;
+  }
+
+  &:after {
+    @include waves;
+    top: -39rem;
+    right: -6.9rem;
+  }
+}

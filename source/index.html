@@ -116,13 +116,13 @@
             <div class="intro__actions">
                 <a class="intro__btn btn btn--default" href="#">
                     Получить консультацию
-                    <svg width="19" height="8" viewBox="0 0 19 8">
+                    <svg class="btn__icon-arrow" width="19" height="8" viewBox="0 0 19 8">
                         <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                 </a>
                 <a class="intro__btn btn btn--default btn--transparent" href="#">
                     Услуги
-                    <svg width="19" height="8" viewBox="0 0 19 8">
+                    <svg class="btn__icon-arrow" width="19" height="8" viewBox="0 0 19 8">
                         <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                 </a>
@@ -208,7 +208,7 @@
             <div class="btn-wrap">
                 <a class="about__btn btn btn--default" href="#">
                     Подробнее о компании
-                    <svg width="19" height="8" viewBox="0 0 19 8">
+                    <svg class="btn__icon-arrow" width="19" height="8" viewBox="0 0 19 8">
                         <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                 </a>
@@ -352,7 +352,7 @@
         <div class="btn-wrap btn-wrap--center">
             <a class="btn btn--default" href="#">
                 Смотреть весь каталог
-                <svg width="19" height="8" viewBox="0 0 19 8">
+                <svg class="btn__icon-arrow" width="19" height="8" viewBox="0 0 19 8">
                     <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                 </svg>
             </a>
@@ -394,7 +394,7 @@
             <div class="btn-wrap btn-wrap--center">
                 <a class="btn btn--default btn--center" href="#">
                     Смотреть все
-                    <svg width="19" height="8" viewBox="0 0 19 8">
+                    <svg class="btn__icon-arrow" width="19" height="8" viewBox="0 0 19 8">
                         <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                 </a>
@@ -626,6 +626,126 @@
                 </div>
             </a>
         </div>
+    </div>
+</section>
+
+<!-- reviews -->
+<section class="section section--reviews">
+    <div class="container">
+        <h2 class="title">
+            О нас говорят
+            <span class="title__sub">Отзывы</span>
+        </h2>
+
+        <div class="reviews">
+            <div class="row reviews-slider">
+                <div class="col-12">
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img class="reviews__photo" src="img/review.png" alt="">
+                            <div class="reviews__header-inner">
+                                <div class="reviews__name">Имя Фамилия</div>
+                                <div class="reviews__prof">Частное лицо</div>
+                            </div>
+                        </div>
+
+                        <div class="reviews__text">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img class="reviews__photo" src="img/review.png" alt="">
+                            <div class="reviews__header-inner">
+                                <div class="reviews__name">Имя Фамилия</div>
+                                <div class="reviews__prof">Частное лицо</div>
+                            </div>
+                        </div>
+
+                        <div class="reviews__text">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img class="reviews__photo" src="img/review.png" alt="">
+                            <div class="reviews__header-inner">
+                                <div class="reviews__name">Имя Фамилия</div>
+                                <div class="reviews__prof">Частное лицо</div>
+                            </div>
+                        </div>
+
+                        <div class="reviews__text">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img class="reviews__photo" src="img/review.png" alt="">
+                            <div class="reviews__header-inner">
+                                <div class="reviews__name">Имя Фамилия</div>
+                                <div class="reviews__prof">Частное лицо</div>
+                            </div>
+                        </div>
+
+                        <div class="reviews__text">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-wrap btn-wrap--center">
+                <a class="btn btn--default" href="#">
+                    Оставить отзыв
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use xlink:href="img/sprite.svg#icon-review"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- consultation -->
+<section class="section section--consultation">
+    <div class="container">
+        <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <h3 class="form__title">Получить консультацию</h3>
+
+            <div class="form__inner">
+                <input class="form__input" type="text" name="name" placeholder="Имя">
+                <input class="form__input" type="tel" name="tel" placeholder="Телефон">
+                <input class="form__input" type="email" name="email" placeholder="E-mail">
+            </div>
+
+
+            <div class="form__connection">
+                <p>Выберите удобный способ связи</p>
+
+                <div class="form__checkboxes-wrapper">
+                    <input class="form__checkbox" type="checkbox" id="viber" name="viber" value="viber">
+                    <label for="viber">Viber</label>
+
+                    <input class="form__checkbox" type="checkbox" id="telegram" name="telegram" value="yes" checked>
+                    <label for="telegram">Telegram</label>
+                </div>
+            </div>
+
+            <div class="btn-wrap btn-wrap--center">
+                <button class="btn btn--default" type="submit">Отправить сообщение</button>
+            </div>
+        </form>
     </div>
 </section>
 

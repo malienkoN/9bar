@@ -1,0 +1,93 @@
+.form {
+  padding: 2.5rem 8.9rem 4.2rem;
+  width: 61.7rem;
+  margin: 0 auto;
+  background-color: $white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+.form__title {
+  margin-bottom: 2.4rem;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4.9rem;
+  line-height: 1.2;
+}
+
+.form__inner {
+  margin-bottom: 3.3rem;
+  display: grid;
+  grid-template-rows: repeat(3, 5rem);
+  grid-row-gap: 2rem;
+}
+
+.form__input {
+  font-family: 'Roboto',sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $black;
+  padding: 0 1.6rem;
+  background-color: #f4f6fa;
+  outline: 0;
+  border: 1px solid transparent;
+  transition: border .2s linear;
+
+  &::placeholder {
+    color: $black;
+  }
+
+  &:focus {
+    border: 1px solid rgba($blue, .5);
+  }
+}
+
+.form__connection {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    margin-bottom: 3.3rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* checkbox */
+.form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  &:first-of-type {
+    margin-right: 5.4rem;
+  }
+}
+
+.form__checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 2.6rem;
+  height: 2.7rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 1.5rem;
+  background-color: #f4f6fa;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.form__checkbox:checked+label::before {
+  background-image: url('../img/checkbox.svg');
+}
