@@ -4,14 +4,22 @@
 
 .social__list {
 
-  &:first-of-type {
-    margin-right: 7.7rem;
+  &--first {
+    margin-right: 7.3rem;
+  }
+
+  &--footer {
+    margin-right: 5.9rem;
   }
 }
 
 .social__icon {
   margin-right: 1.7rem;
   fill: $blue;
+
+  &--white {
+    fill: $white;
+  }
 
   &--viber {
     margin-right: 1rem;
@@ -31,6 +39,10 @@
   color: $blue;
 
   margin-bottom: .4rem;
+
+  &--white {
+    color: $white;
+  }
 }
 
 .social__items-bottom {
