@@ -13,6 +13,10 @@
   z-index: 10;
 }
 
+.modal.show {
+  transform: translateX(0);
+}
+
 .container-modal {
   width: 100%;
   height: 100%;
@@ -29,10 +33,6 @@
     top: 50%;
     transform: translateY(-50%);
   }
-}
-
-.modal.show {
-  transform: translateX(0);
 }
 
 .modal__inner {

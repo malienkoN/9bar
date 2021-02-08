@@ -3,6 +3,8 @@ $(document).ready(function () {
     /* Menu modal */
     let navToggle = $('#navToggle');
     let menuModal = $('#menuModal');
+    let searchToggle = $('#searchToggle');
+    let searchModal = $('#searchModal');
 
     navToggle.on('click', function (event) {
         event.preventDefault();
@@ -35,6 +37,47 @@ $(document).ready(function () {
 
         $('.dropdown').fadeToggle();
         $('.action__icon-dropdown').toggleClass('rotate');
+    });
+
+    $('.action__link-search__dropdown').click(function (e) {
+        e.preventDefault();
+
+        $('.search-dropdown').fadeToggle();
+    })
+
+    /* popup */
+    let popupFade = $('.popup-fade');
+
+    $('.popup-open').click(function() {
+        popupFade.toggleClass('visible');
+        $('body').toggleClass('lock');
+        return false;
+    });
+
+    // Клик по ссылке "Закрыть".
+    $('.popup-close').click(function() {
+        $('body').toggleClass('lock');
+        $(this).parents('.popup-fade').toggleClass('visible');
+        return false;
+    });
+
+    // Закрытие по клавише Esc.
+    $(document).on('keydown', function (e) {
+        if ( e.keyCode === 27 ) { // ESC
+            if (popupFade.hasClass('visible')) {
+
+                $('body').toggleClass('lock');
+                popupFade.toggleClass('visible');
+            }
+        }
+    });
+
+    // Клик по фону, но не по окну.
+    popupFade.click(function(e) {
+        if ($(e.target).closest('.popup').length === 0) {
+            $('body').toggleClass('lock');
+            $(this).toggleClass('visible');
+        }
     });
 
     /* Recommendation slider */

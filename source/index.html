@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="sass/blocks/modal.scss">
 </head>
 <body>
 <header class="header">
@@ -19,7 +20,7 @@
                 </button>
 
                 <a class="header__logo-link" href="index.html">
-                    <img class="header__logo img" src="img/logo.png" alt="9 Бар">
+                    <img class="header__logo header__logo--first img" src="img/logo.png" alt="9 Бар">
                     <img class="header__logo header__logo--second img" src="img/logo-black.png" alt="9 Бар">
                 </a>
             </div>
@@ -65,13 +66,22 @@
                         </ul>
                     </li>
 
-                    <li class="action__item">
-                        <a class="action__link" href="#">
+                    <li class="action__item has-search-dropdown">
+                        <a class="action__link action__link-search__dropdown" href="#">
                             <svg class="action__icon" width="18" height="18" viewBox="0 0 18 18">
                                 <use xlink:href="img/sprite.svg#icon-search"></use>
                             </svg>
                             Поиск
                         </a>
+
+                        <form class="search-dropdown" action="/">
+                            <input class="search-dropdown__input" type="text" name="search" placeholder="Поиск по сайту…">
+                            <button class="search-dropdown__btn btn" type="submit">
+                                <svg class="action__icon" width="22" height="22" viewBox="0 0 25 25">
+                                    <use xlink:href="img/sprite.svg#icon-search-dropdown"></use>
+                                </svg>
+                            </button>
+                        </form>
                     </li>
 
                     <li class="action__item">
@@ -151,7 +161,8 @@
 <div class="connection">
     <ul class="connection__list">
         <li class="connection__item">
-            <a class="connection__link" href="tel:0933758828">
+            <!-- has popup open -->
+            <a class="connection__link popup-open" href="tel:0933758828">
                 <svg width="29" height="29" viewBox="0 0 29 29">
                     <use xlink:href="img/sprite.svg#icon-phone-connection"></use>
                 </svg>
@@ -720,7 +731,7 @@
 <!-- consultation -->
 <section class="section section--consultation">
     <div class="container">
-        <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="form" action="/" method="get">
             <h3 class="form__title">Получить консультацию</h3>
 
             <div class="form__inner">
@@ -953,6 +964,29 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="popup-fade">
+    <div class="popup">
+        <button class="popup-close btn" type="button">
+            <svg width="25" height="25" viewBox="0 0 25 25">
+                <use xlink:href="img/sprite.svg#icon-popup-close"></use>
+            </svg>
+        </button>
+        <h4 class="popup-title">Заказать обратный звонок</h4>
+
+        <form class="popup-form" action="/" method="get">
+
+            <div class="popup-form__inner">
+                <input class="popup-form__input" type="text" name="name" placeholder="Имя">
+                <input class="popup-form__input" type="tel" name="tel" placeholder="+38 (__) ___-__-__ ">
+            </div>
+
+            <div class="btn-wrap btn-wrap--center">
+                <button class="popup-btn btn btn--default" type="submit">Заказать звонок</button>
+            </div>
+        </form>
     </div>
 </div>
 

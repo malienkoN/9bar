@@ -33,6 +33,10 @@
   position: relative;
 }
 
+.action__item.has-search-dropdown {
+  position: relative;
+}
+
 .action__icon {
   margin-right: 1rem;
   fill: $white;

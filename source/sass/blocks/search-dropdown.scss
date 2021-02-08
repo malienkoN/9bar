@@ -1,0 +1,32 @@
+.search-dropdown {
+  display: none;
+  position: absolute;
+  top: 200%;
+  left: 10%;
+  z-index: 2;
+}
+
+.search-dropdown__input {
+  font-family: 'Roboto',sans-serif;
+  font-style: normal;
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: $white;
+  padding: 0 2.5rem 1rem 0;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid $white;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.search-dropdown__btn {
+  width: 2.2rem;
+  height: 2.2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
