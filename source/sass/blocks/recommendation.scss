@@ -23,3 +23,22 @@
     left: -5rem;
   }
 }
+
+@media (max-width: 1499px) {
+  .recommendation {
+
+    .slick-prev svg,
+    .slick-next svg {
+      width: 1.2rem;
+      height: 1.9rem;
+    }
+
+    .slick-next {
+      right: -2rem;
+    }
+
+    .slick-prev {
+      left: -2rem;
+    }
+  }
+}

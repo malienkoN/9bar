@@ -9,6 +9,10 @@
 
   position: absolute;
   z-index: -2;
+
+  @media (max-width: 1499px) {
+    background-size: 80%;
+  }
 }
 
 @mixin rectangle {

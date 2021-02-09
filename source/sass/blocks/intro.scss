@@ -89,3 +89,10 @@
     transform: translateY(.2rem);
   }
 }
+
+@media (max-width: 1499px) {
+  .intro__title {
+    font-size: 6rem;
+    max-width: 70rem;
+  }
+}

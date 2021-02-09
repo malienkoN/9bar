@@ -6,8 +6,24 @@
 
 .nav__link {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 60px;
+  font-size: 6rem;
   line-height: 1.25;
   font-weight: 700;
   color: $blue;
+}
+
+@media (max-width: 1499px) {
+  .nav__link {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .nav {
+    margin-bottom: 10rem;
+  }
+
+  .nav__list:first-of-type {
+    margin-right: 10rem;
+  }
 }

@@ -51,3 +51,15 @@
   max-width: 20rem;
   text-align: center;
 }
+
+@media (max-width: 1499px) {
+  .pulse__link {
+    margin-bottom: 2rem;
+    width: 5.6rem;
+    height: 5.6rem;
+
+    &:before {
+      border-width: 9px 0 9px 15px;
+    }
+  }
+}

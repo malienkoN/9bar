@@ -38,3 +38,29 @@
     left: -7rem;
   }
 }
+
+@media (max-width: 1499px) {
+  .manufacturer {
+    padding: 3rem;
+    margin: 0;
+    min-height: auto;
+
+    .slick-prev svg,
+    .slick-next svg {
+      width: 1.2rem;
+      height: 1.9rem;
+    }
+
+    .slick-next {
+      right: -2rem;
+    }
+
+    .slick-prev {
+      left: -2rem;
+    }
+  }
+
+  .manufacturer-slider {
+    margin: 5rem 0;
+  }
+}

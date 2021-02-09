@@ -110,3 +110,27 @@
     right: -6.9rem;
   }
 }
+
+@media (max-width: 1499px) {
+  .section--about {
+
+    &:after {
+      right: -10rem;
+      top: -5rem;
+    }
+
+    &:before {
+      right: -10rem;
+    }
+  }
+
+  .section--recommendation {
+    &:before {
+      left: -10rem;
+    }
+
+    &:after {
+      right: -10rem;
+    }
+  }
+}

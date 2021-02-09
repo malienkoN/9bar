@@ -35,10 +35,10 @@
   position: absolute;
   top: 2rem;
   right: 2.4rem;
-  transition: transform .2s ease-in;
+  transition: transform .2s linear;
 
   &:hover {
-    transform: rotate(90deg);
+    transform: scale(1.2);
   }
 }
 
@@ -84,5 +84,17 @@
 
   &:focus {
     border-color: $blue;
+  }
+}
+
+@media (max-width: 1499px) {
+  .popup-title {
+    margin-bottom: 4rem;
+
+    font-size: 2rem;
+  }
+
+  .popup-form__input {
+    font-size: 1.6rem;
   }
 }

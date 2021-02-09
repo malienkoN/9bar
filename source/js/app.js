@@ -86,7 +86,15 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: "<button type='button' class='slick-prev btn' aria-label='previous'><svg width='22' height='35' viewBox='0 0 22 35'><use xlink:href='img/sprite.svg#icon-slick-arrow-prev'></use></svg></button>",
-        nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='22' height='35' viewBox='0 0 22 35'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>"
+        nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='22' height='35' viewBox='0 0 22 35'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>",
+        responsive: [
+            {
+                breakpoint: 1499,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+        ]
     });
 
     /* Manufacturer slider */
@@ -95,7 +103,15 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: "<button type='button' class='slick-prev btn' aria-label='previous'><svg width='22' height='35' viewBox='0 0 22 35'><use xlink:href='img/sprite.svg#icon-slick-arrow-prev'></use></svg></button>",
-        nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='22' height='35' viewBox='0 0 22 35'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>"
+        nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='22' height='35' viewBox='0 0 22 35'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>",
+        responsive: [
+            {
+                breakpoint: 1499,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+        ]
     });
 
     /* Reviews slider */
@@ -104,7 +120,7 @@ $(document).ready(function () {
         slidesToShow: 2,
         slidesToScroll: 1,
         prevArrow: "<button type='button' class='slick-prev btn' aria-label='previous'><svg width='12' height='19' viewBox='0 0 12 19'><use xlink:href='img/sprite.svg#icon-slick-arrow-prev'></use></svg></button>",
-        nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='12' height='19' viewBox='0 0 12 19'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>"
+        nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='12' height='19' viewBox='0 0 12 19'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>",
     });
 });
 
