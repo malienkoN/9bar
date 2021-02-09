@@ -88,6 +88,29 @@
   }
 
   .about__item:last-of-type:before {
-    margin: 0;
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about__text {
+    font-size: 1.8rem;
+  }
+
+  .about__title-list {
+    font-size: 1.8rem;
+  }
+
+  .about__list-item {
+    padding-left: 5rem;
+    font-size: 1.8rem;
+
+    &:before {
+      width: 2.4rem;
+    }
+  }
+
+  .about__text-img {
+    font-size: 3.5rem;
   }
 }

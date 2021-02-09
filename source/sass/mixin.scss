@@ -13,6 +13,10 @@
   @media (max-width: 1499px) {
     background-size: 80%;
   }
+
+  @media (max-width: 1199px) {
+    background-size: 60%;
+  }
 }
 
 @mixin rectangle {

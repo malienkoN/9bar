@@ -31,3 +31,9 @@
   font-size: 2rem;
   font-weight: 400;
 }
+
+@media (max-width: 1199px) {
+  .services__title {
+    font-size: 1.8rem;
+  }
+}

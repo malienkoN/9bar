@@ -56,3 +56,19 @@
     left: 4rem;
   }
 }
+
+@media (max-width: 1199px) {
+  .title {
+    padding-left: 4.5rem;
+    font-size: 3.5rem;
+
+    &:before {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+
+  .title__sub {
+    font-size: 15rem;
+  }
+}

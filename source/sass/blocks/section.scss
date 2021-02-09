@@ -125,12 +125,112 @@
   }
 
   .section--recommendation {
+
     &:before {
       left: -10rem;
     }
 
     &:after {
       right: -10rem;
+    }
+  }
+
+  .section--manufacturer {
+
+    &:before {
+      height: 25rem;
+    }
+  }
+
+  .section--services {
+
+    &:before {
+      left: -15rem;
+    }
+  }
+
+  .section--works {
+
+    &:before {
+      left: -15rem;
+    }
+  }
+
+  .section--news {
+
+    &:after {
+      right: -15rem;
+    }
+  }
+
+  .section--consultation {
+
+    &:before {
+      left: -10rem;
+    }
+
+    &:after {
+      top: -35rem;
+      right: -10rem;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .section--about {
+
+    &:after {
+      right: -20rem;
+      top: -10rem;
+    }
+
+    &:before {
+      right: -20rem;
+      bottom: 0;
+    }
+  }
+
+  .section--recommendation {
+
+    &:before {
+      left: -20rem;
+    }
+
+    &:after {
+      right: -20rem;
+    }
+  }
+
+  .section--services {
+
+    &:before {
+      left: -22rem;
+    }
+  }
+
+  .section--works {
+
+    &:before {
+      left: -22rem;
+    }
+  }
+
+  .section--news {
+
+    &:after {
+      right: -22rem;
+    }
+  }
+
+  .section--consultation {
+
+    &:before {
+      left: -20rem;
+    }
+
+    &:after {
+      top: -35rem;
+      right: -20rem;
     }
   }
 }

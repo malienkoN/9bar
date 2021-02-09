@@ -49,3 +49,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 1199px) {
+  .social__link {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .social {
+    flex-direction: column;
+  }
+}

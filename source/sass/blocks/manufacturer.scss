@@ -41,26 +41,26 @@
 
 @media (max-width: 1499px) {
   .manufacturer {
-    padding: 3rem;
+    padding: 4rem;
     margin: 0;
     min-height: auto;
 
     .slick-prev svg,
     .slick-next svg {
       width: 1.2rem;
-      height: 1.9rem;
+      height: 2.2rem;
     }
 
     .slick-next {
-      right: -2rem;
+      right: -2.5rem;
     }
 
     .slick-prev {
-      left: -2rem;
+      left: -2.5rem;
     }
   }
 
   .manufacturer-slider {
-    margin: 5rem 0;
+    margin: 8rem 0;
   }
 }

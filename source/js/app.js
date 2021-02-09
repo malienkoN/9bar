@@ -89,7 +89,7 @@ $(document).ready(function () {
         nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='22' height='35' viewBox='0 0 22 35'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>",
         responsive: [
             {
-                breakpoint: 1499,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
                 }
@@ -106,7 +106,7 @@ $(document).ready(function () {
         nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='22' height='35' viewBox='0 0 22 35'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>",
         responsive: [
             {
-                breakpoint: 1499,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
                 }

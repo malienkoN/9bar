@@ -96,3 +96,37 @@
   opacity: 1;
   visibility: visible;
 }
+
+@media (max-width: 991px) {
+  .news {
+    grid-template-columns: 1fr;
+  }
+
+  .news__item-title {
+    font-size: 2rem;
+  }
+
+  .news__item:hover .news__item-body {
+    top: 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .news__item:hover .news__item-body {
+    top: 4rem;
+  }
+
+  .news__item-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .news__item-body {
+    padding: 0 1rem;
+  }
+
+  .news__item:hover .news__item-body {
+    top: 2.5rem;
+  }
+}

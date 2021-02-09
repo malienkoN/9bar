@@ -52,6 +52,13 @@
   .modal__item:last-of-type {
     justify-content: center;
   }
+
+  .container-modal {
+
+    &:after {
+      right: -15rem;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -59,5 +66,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .container-modal {
+
+    &:after {
+      right: -22rem;
+    }
+  }
+}
+
+@media (max-width: 484px) {
+  .modal__inner {
+    align-items: flex-start;
   }
 }

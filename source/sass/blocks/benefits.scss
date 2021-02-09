@@ -66,3 +66,18 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 1199px) {
+  .benefits__list-item {
+    font-size: 1.8rem;
+    padding-left: 6rem;
+
+    &:before {
+      width: 2.4rem;
+    }
+  }
+
+  .benefits__span {
+    font-size: 2.5rem;
+  }
+}
