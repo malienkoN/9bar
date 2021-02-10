@@ -3,8 +3,6 @@ $(document).ready(function () {
     /* Menu modal */
     let navToggle = $('#navToggle');
     let menuModal = $('#menuModal');
-    let searchToggle = $('#searchToggle');
-    let searchModal = $('#searchModal');
 
     navToggle.on('click', function (event) {
         event.preventDefault();
@@ -13,6 +11,7 @@ $(document).ready(function () {
         $('.header__logo--first').toggleClass('hide');
         $('.header__logo--second').toggleClass('show');
         $('.header__right').toggleClass('delete');
+        $('.header').toggleClass('clicked');
         $('body').toggleClass('lock');
         menuModal.toggleClass('show');
     });
