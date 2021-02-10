@@ -95,7 +95,8 @@
 }
 
 .section--consultation {
-  margin-bottom: 3.2rem;
+  overflow: hidden;
+  padding-bottom: 3.2rem;
   position: relative;
 
   &:before {
