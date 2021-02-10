@@ -32,6 +32,12 @@
   }
 }
 
+@media (max-width: 991px) {
+  .nav {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 767px) {
   .nav__link {
     font-size: 3.5rem;
@@ -47,5 +53,10 @@
 
   .nav__list:first-of-type {
     margin: 0;
+  }
+
+  .nav__link {
+    display: block;
+    margin-bottom: .5rem;
   }
 }

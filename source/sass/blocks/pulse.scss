@@ -63,3 +63,20 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .pulse__text {
+    font-size: 1.4rem;
+    max-width: 17rem;
+    margin-left: auto;
+  }
+
+  .pulse {
+    position: static;
+  }
+
+  .pulse__link {
+    margin-left: auto;
+    margin-right: 5rem;
+  }
+}

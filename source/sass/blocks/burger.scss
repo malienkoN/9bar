@@ -59,3 +59,17 @@
 .burger.active .burger__line:nth-child(2) {
   transform: rotate(-45deg);
 }
+
+@media (max-width: 575px) {
+  .burger {
+    width: 35px;
+  }
+
+  .burger__line {
+    width: 35px;
+
+    &:nth-child(3) {
+      width: 15px;
+    }
+  }
+}

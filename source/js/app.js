@@ -12,7 +12,7 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.header__logo--first').toggleClass('hide');
         $('.header__logo--second').toggleClass('show');
-        $('.header__right').fadeToggle();
+        $('.header__right').toggleClass('delete');
         $('body').toggleClass('lock');
         menuModal.toggleClass('show');
     });
@@ -24,7 +24,7 @@ $(document).ready(function () {
                 $(navToggle).toggleClass('active');
                 $('.header__logo--first').toggleClass('hide');
                 $('.header__logo--second').toggleClass('show');
-                $('.header__right').fadeToggle();
+                $('.header__right').toggleClass('delete');
                 $('body').toggleClass('lock');
                 menuModal.toggleClass('show');
             }

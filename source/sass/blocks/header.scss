@@ -21,6 +21,10 @@
   align-items: center;
 }
 
+.header__right.delete {
+  display: none;
+}
+
 .header__logo-link {
   position: relative;
 }
@@ -43,5 +47,18 @@
 
 .header__logo--second.show {
   opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .header__right {
+    display: none;
+  }
+
+  .header {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px)  {
 }
 
