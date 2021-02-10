@@ -81,3 +81,64 @@
     font-size: 2.5rem;
   }
 }
+
+@media (max-width: 991px) {
+  .benefits__span {
+    font-size: 2rem;
+  }
+
+  .benefits__item:first-of-type:before {
+    height: 25rem;
+  }
+
+  .benefits__list-item {
+    font-size: 1.7rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits {
+    margin-bottom: 15rem;
+  }
+
+  .benefits__inner {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+  }
+
+  .benefits__item:first-of-type:before {
+    display: none;
+  }
+
+  .benefits__item:first-of-type {
+    background: linear-gradient(to bottom,#007adc 0,#1d98fa 100%);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+  }
+
+  .benefits__span:first-of-type {
+    left: 2rem;
+    top: 1rem;
+  }
+
+  .benefits__span:last-of-type {
+    right: 2rem;
+    bottom: 1rem;
+  }
+
+  .benefits__list-item {
+    font-size: 1.6rem;
+    padding-left: 4rem;
+
+    &:before {
+      width: 2rem;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .benefits__span {
+    font-size: 1.8rem;
+  }
+}

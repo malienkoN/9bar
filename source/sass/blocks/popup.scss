@@ -97,4 +97,25 @@
   .popup-form__input {
     font-size: 1.6rem;
   }
+
+  .popup-btn {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .popup-close svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .popup-form__inner {
+    margin-bottom: 5rem;
+    grid-template-rows: 6rem 6rem;
+    grid-row-gap: 3rem;
+  }
+
+  .popup {
+    padding: 6rem 8rem 7rem;
+  }
 }

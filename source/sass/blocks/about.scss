@@ -61,19 +61,33 @@
 }
 
 .about__img {
-  margin-left: 4.5rem;
-  margin-top: -4.5rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
 
-.about__text-img {
+.about__img-wrap {
   margin-left: 4.5rem;
   margin-top: -4.5rem;
+  position: relative;
+}
+
+.about__img-wrap:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .65;
+  z-index: 1;
+  background-color: $blue;
+}
+
+.about__text-img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 2;
 
   font-family: 'Bebas Neue', sans-serif;
   font-size: 4.5rem;
@@ -82,8 +96,7 @@
 }
 
 @media (max-width: 1399px) {
-  .about__img,
-  .about__text-img {
+  .about__img-wrap {
     margin: 0;
   }
 
@@ -112,5 +125,40 @@
 
   .about__text-img {
     font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .about__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__item:first-of-type {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .about__text {
+    font-size: 1.6rem;
+  }
+
+  .about__title-list {
+    font-size: 1.6rem;
+  }
+
+  .about__list-item {
+    font-size: 1.6rem;
+    padding-left: 4rem;
+
+    &:before {
+      width: 2rem;
+    }
+  }
+
+  .about__text-img {
+    font-size: 3rem;
   }
 }

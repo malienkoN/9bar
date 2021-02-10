@@ -234,3 +234,17 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .section--about {
+    padding-top: 13rem;
+  }
+
+  .section--manufacturer {
+    margin-bottom: 20rem;
+
+    &:before {
+      display: none;
+    }
+  }
+}

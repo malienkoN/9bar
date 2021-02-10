@@ -72,3 +72,28 @@
     font-size: 15rem;
   }
 }
+
+@media (max-width: 991px) {
+  .title__sub {
+    font-size: 12rem;
+    top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .title__sub {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 3rem;
+    padding-left: 4rem;
+
+    &:before {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

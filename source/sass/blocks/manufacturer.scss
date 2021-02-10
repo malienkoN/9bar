@@ -61,6 +61,14 @@
   }
 
   .manufacturer-slider {
-    margin: 8rem 0;
+    margin: 10rem 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .manufacturer {
+    padding: 0;
+    background: none;
+    box-shadow: none;
   }
 }
