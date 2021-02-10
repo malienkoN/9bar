@@ -147,6 +147,21 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow: "<button type='button' class='slick-prev btn' aria-label='previous'><svg width='12' height='19' viewBox='0 0 12 19'><use xlink:href='img/sprite.svg#icon-slick-arrow-prev'></use></svg></button>",
         nextArrow: "<button type='button' class='slick-next btn' aria-label='next'><svg width='12' height='19' viewBox='0 0 12 19'><use xlink:href='img/sprite.svg#icon-slick-arrow-next'></use></svg></button>",
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            },
+        ]
     });
 });
 

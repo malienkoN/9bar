@@ -60,3 +60,9 @@
 .reviews__prof {
   font-weight: 300;
 }
+
+@media (max-width: 575px) {
+  .reviews__item {
+    padding: 4rem 2rem 6rem;
+  }
+}

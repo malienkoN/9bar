@@ -17,6 +17,10 @@
   @media (max-width: 1199px) {
     background-size: 60%;
   }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 @mixin rectangle {

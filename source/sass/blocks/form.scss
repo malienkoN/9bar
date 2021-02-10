@@ -91,3 +91,32 @@
 .form__checkbox:checked+label::before {
   background-image: url('../img/checkbox.svg');
 }
+
+@media (max-width: 1499px) {
+  .form__title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    padding: 2.5rem 3rem 4.2rem;
+    width: auto;
+  }
+
+  .form__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .form {
+    box-shadow: none;
+    background: none;
+    padding: 0;
+  }
+
+  .form__title {
+    font-size: 3rem;
+  }
+}

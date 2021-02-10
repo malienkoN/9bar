@@ -235,6 +235,20 @@
   }
 }
 
+@media (max-width: 991px) {
+  .section--services {
+    margin-bottom: 18rem;
+  }
+
+  .section--works {
+    margin-bottom: 18rem;
+  }
+
+  .section--news {
+    margin-bottom: 18rem;
+  }
+}
+
 @media (max-width: 767px) {
   .section--about {
     padding-top: 13rem;

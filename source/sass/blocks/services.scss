@@ -37,3 +37,19 @@
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 991px) {
+  .services .col-md-6 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .services__title {
+    font-size: 1.6rem;
+  }
+
+  .services__box {
+    min-height: auto;
+  }
+}
