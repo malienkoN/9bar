@@ -40,6 +40,10 @@
 .action__icon {
   margin-right: 1rem;
   fill: $white;
+
+  &--blue {
+    fill: $blue;
+  }
 }
 
 .action__icon-dropdown {

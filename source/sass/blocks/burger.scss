@@ -37,6 +37,10 @@
     transform-origin: left;
     transition: width .3s ease-out;
   }
+
+  &--blue {
+    background-color: $blue;
+  }
 }
 
 .burger.active .burger__line:nth-child(3) {
