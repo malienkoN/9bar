@@ -75,6 +75,14 @@
   }
 }
 
+.action__lang-link--blue {
+  color: rgba(0, 122, 220, .5);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .action__lang-item +.action__lang-item {
   padding-left: 7px;
   margin-left: 7px;
@@ -88,4 +96,8 @@
   height: 15px;
   border-left: 1.5px solid $white;
   content: '';
+}
+
+.action__lang-item--blue + .action__lang-item--blue:before {
+  border-color: $blue;
 }

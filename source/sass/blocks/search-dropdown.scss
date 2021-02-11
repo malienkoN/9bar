@@ -23,6 +23,15 @@
   }
 }
 
+.search-dropdown__input--blue {
+  border-color: $blue;
+  color: $blue;
+
+  &::placeholder {
+    color: $blue;
+  }
+}
+
 .search-dropdown__btn {
   width: 2.2rem;
   height: 2.2rem;

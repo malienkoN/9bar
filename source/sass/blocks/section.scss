@@ -112,6 +112,34 @@
   }
 }
 
+.section--inner {
+  padding-top: 13.6rem;
+}
+
+.section--about-company {
+  margin-bottom: 15.5rem;
+}
+
+.section--collab {
+  background: url('../img/collab-background.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .8;
+    z-index: 1;
+    background-color: $blue;
+  }
+}
+
 @media (max-width: 1499px) {
   .section--about {
 

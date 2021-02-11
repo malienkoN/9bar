@@ -9,6 +9,10 @@
   top: 150%;
   left: -9%;
   z-index: 2;
+
+  &--blue {
+    background-color: rgba(0, 122, 220, .8);
+  }
 }
 
 .dropdown__item {
@@ -24,8 +28,16 @@
 .dropdown__icon {
   margin-right: 1rem;
   fill: $blue;
+
+  &--white {
+    fill: $white;
+  }
 }
 
 .dropdown__link {
   color: $blue;
+
+  &--white {
+    color: $white;
+  }
 }

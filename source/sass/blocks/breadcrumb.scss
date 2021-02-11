@@ -1,0 +1,29 @@
+.breadcrumb {
+  padding: 0;
+  margin: 0 0 13.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  margin-right: 1rem;
+  content: '';
+  width: 12px;
+  height: 6px;
+  background: url('../img/breadcrumb-arrow.svg') no-repeat center;
+  background-size: cover;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 1rem;
+}

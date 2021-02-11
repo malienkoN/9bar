@@ -19,8 +19,7 @@
                 </button>
 
                 <a class="header__logo-link" href="index.html">
-                    <img class="header__logo header__logo--first img" src="img/logo.png" alt="9 Бар">
-                    <img class="header__logo header__logo--second img" src="img/logo-black.png" alt="9 Бар">
+                    <img class="header__logo header__logo--second header__logo--static img" src="img/logo-black.png" alt="9 Бар">
                 </a>
             </div>
 
@@ -40,27 +39,27 @@
                         </a>
 
                         <!-- dropdown -->
-                        <ul class="dropdown">
+                        <ul class="dropdown dropdown--blue">
                             <li class="dropdown__item">
-                                <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <svg class="dropdown__icon dropdown__icon--white" width="20" height="20" viewBox="0 0 20 20">
                                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                                 </svg>
 
-                                <a class="dropdown__link" href="tel:0933758828">+38 (093) 375 8828</a>
+                                <a class="dropdown__link dropdown__link--white" href="tel:0933758828">+38 (093) 375 8828</a>
                             </li>
                             <li class="dropdown__item">
-                                <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <svg class="dropdown__icon dropdown__icon--white" width="20" height="20" viewBox="0 0 20 20">
                                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                                 </svg>
 
-                                <a class="dropdown__link" href="tel:0933758828">+38 (093) 375 8828</a>
+                                <a class="dropdown__link dropdown__link--white" href="tel:0933758828">+38 (093) 375 8828</a>
                             </li>
                             <li class="dropdown__item">
-                                <svg class="dropdown__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <svg class="dropdown__icon dropdown__icon--white" width="20" height="20" viewBox="0 0 20 20">
                                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                                 </svg>
 
-                                <a class="dropdown__link" href="tel:0933758828">+38 (093) 375 8828</a>
+                                <a class="dropdown__link dropdown__link--white" href="tel:0933758828">+38 (093) 375 8828</a>
                             </li>
                         </ul>
                     </li>
@@ -74,7 +73,7 @@
                         </a>
 
                         <form class="search-dropdown" action="/">
-                            <input class="search-dropdown__input" type="text" name="search" placeholder="Поиск по сайту…">
+                            <input class="search-dropdown__input search-dropdown__input--blue" type="text" name="search" placeholder="Поиск по сайту…">
                             <button class="search-dropdown__btn btn" type="submit">
                                 <svg class="action__icon--blue" width="22" height="22" viewBox="0 0 25 25">
                                     <use xlink:href="img/sprite.svg#icon-search-dropdown"></use>
@@ -85,11 +84,11 @@
 
                     <li class="action__item">
                         <ul class="action__lang">
-                            <li class="action__lang-item">
-                                <a class="action__lang-link  action__lang-link--active" href="#"> RU </a>
+                            <li class="action__lang-item action__lang-item--blue">
+                                <a class="action__lang-link action__lang-link--blue" href="#"> RU </a>
                             </li>
 
-                            <li class="action__lang-item">
+                            <li class="action__lang-item action__lang-item--blue">
                                 <a class="action__lang-link" href="#"> UA </a>
                             </li>
                         </ul>
@@ -111,8 +110,103 @@
     </div>
 </header>
 
+<!-- connection -->
+<div class="connection">
+    <ul class="connection__list">
+        <li class="connection__item">
+            <!-- has popup open -->
+            <a class="connection__link popup-open" href="tel:0933758828">
+                <svg width="29" height="29" viewBox="0 0 29 29">
+                    <use xlink:href="img/sprite.svg#icon-phone-connection"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="connection__item">
+            <a class="connection__link" href="https://t.me/Ivan_mrgrdsk">
+                <svg width="32" height="27" viewBox="0 0 32 27">
+                    <use xlink:href="img/sprite.svg#icon-telegram-connection"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="connection__item">
+            <a class="connection__link" href="viber://chat?number=380933758828">
+                <svg width="34.142" height="36.005" viewBox="0 0 34.142 36.005">
+                    <use xlink:href="img/sprite.svg#icon-viber-connection"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+
 <main class="main">
 
+<!-- about-company -->
+<section class="section section--inner section--about-company">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item" aria-current="page">О компании</li>
+            </ol>
+        </nav>
+
+        <h2 class="title">
+            О компании
+            <span class="title__sub">О компании</span>
+        </h2>
+
+        <div class="about-company">
+            <div class="about-company__item">
+                <div class="about-company__text">
+                    <div>
+                        <p>
+                            Наша торгово-монтажная компания по установке кондиционеров «9 БАР» предоставляет свои услуги для тех, кто предпочитает создать самые комфортные условия в своем доме.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-company__item">
+                <div class="about-company__img-wrap">
+                    <img class="about-company__img" src="img/about-company-img.jpg" width="559" height="479" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- collab -->
+<section class="section section--collab">
+    <div class="container">
+        <div class="collab">
+            <h1 class="collab__title">Интересует сотрудничество с&nbsp;нами?</h1>
+            <p class="collab__text">Заполните форму ниже и&nbsp;наши менеджеры свяжутся с&nbsp;Вами в&nbsp;ближайшее время</p>
+
+            <form class="collab__form" action="/">
+                <div class="collab__input-wrapper">
+                    <input class="collab__input" type="text" name="name" placeholder="Имя">
+                    <input class="collab__input" type="tel" name="tel" placeholder="Телефон">
+                </div>
+                <button class="collab__btn btn btn--default btn--transparent" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</section>
 </main>
 
 <!-- Footer -->
