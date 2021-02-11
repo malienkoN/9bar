@@ -112,12 +112,19 @@
   }
 }
 
-.section--inner {
-  padding-top: 13.6rem;
-}
-
 .section--about-company {
   margin-bottom: 15.5rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    left: -14.7rem;
+    top: 7.4rem;
+  }
+}
+
+.section--collab {
+  margin-bottom: 18.4rem;
 }
 
 .section--collab {
@@ -137,6 +144,16 @@
     opacity: .8;
     z-index: 1;
     background-color: $blue;
+  }
+}
+
+.section--our-team {
+  position: relative;
+
+  &:after {
+    @include waves;
+    right: -2.3rem;
+    bottom: -19.2rem;
   }
 }
 
@@ -203,6 +220,23 @@
       right: -10rem;
     }
   }
+
+  .section--about-company {
+
+    &:before {
+      left: -20rem;
+      top: 5rem;
+    }
+  }
+
+  .section--our-team {
+
+    &:after {
+      @include waves;
+      right: -10rem;
+      bottom: -25rem;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -259,6 +293,22 @@
 
     &:after {
       top: -35rem;
+      right: -20rem;
+    }
+  }
+
+  .section--about-company {
+
+    &:before {
+      left: -25rem;
+      top: 0;
+    }
+  }
+
+  .section--our-team {
+
+    &:after {
+      @include waves;
       right: -20rem;
     }
   }

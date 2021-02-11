@@ -1,5 +1,5 @@
 .breadcrumb {
-  padding: 0;
+  padding: 13.6rem 0 0;
   margin: 0 0 13.7rem;
   display: flex;
   flex-wrap: wrap;
@@ -26,4 +26,10 @@
 
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .breadcrumb {
+    margin: 0 0 10rem;
+  }
 }
