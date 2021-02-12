@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $('.sidebar__item-trigger').click(function () {
+       $(this).next('.sidebar__item-content').slideToggle();
+    });
+
     /* Menu modal */
     let navToggle = $('#navToggle');
     let menuModal = $('#menuModal');
