@@ -5,3 +5,122 @@
   grid-column-gap: 3rem;
   align-items: flex-start;
 }
+
+.catalog__sorting {
+  margin-bottom: 2.7rem;
+  padding: 0 .8rem 0 1.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  background-color: $white;
+  height: 4.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog__sorting-item {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__sorting-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.catalog__sorting-list {
+  display: flex;
+
+  a {
+    font-size: 1.4rem;
+    color: $blue;
+  }
+
+  li {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.catalog__sorting-select__title {
+  font-size: 1.4rem;
+  color: $blue;
+}
+
+.catalog__sorting-select {
+  margin-left: .5rem;
+  width: 4rem;
+  height: 1.8rem;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+
+  &:after {
+    display: block;
+    content: '';
+    width: 7px;
+    height: 4px;
+
+    background: url('../img/select-arrow-down.svg') no-repeat center;
+    background-size: contain;
+
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+
+.catalog__sorting-select select {
+  padding-left: 4px;
+  width: 4rem;
+  height: 1.8rem;
+  border: 1px solid #c4c4c4;
+  outline: none;
+  background-color: #f4f4f4;
+
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+
+  font-size: 1.2rem;
+  color: #505050;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.catalog__text {
+  margin-bottom: 1.5rem;
+  margin-top: 3.3rem;
+  max-height: 187px;
+  overflow: auto;
+}
+
+.catalog__text::-webkit-scrollbar {
+  background-color: #f0f0f0;
+  width: 6px;
+  border: 1px solid $white;
+}
+
+.catalog__text::-webkit-scrollbar-thumb {
+  background-color: $blue;
+  border-radius: 6px;
+}
+
+.catalog__text div {
+  padding: 0 1rem 0 0;
+  font-size: 1.6rem;
+  color: #b7b7b7;
+}
+
+.catalog__text p {
+  margin-bottom: 2.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

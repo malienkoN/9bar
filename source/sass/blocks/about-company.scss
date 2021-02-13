@@ -13,7 +13,8 @@
 
 .about-company__text::-webkit-scrollbar {
   background-color: #f0f0f0;
-  width: 8px;
+  width: 6px;
+  border: 1px solid $white;
 }
 
 .about-company__text::-webkit-scrollbar-thumb {
