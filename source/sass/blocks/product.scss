@@ -64,4 +64,18 @@
   .product-card__price span {
       font-size: 2.2rem;
   }
+
+  .product-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-cards .product-card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .product-cards {
+    grid-template-columns: 1fr;
+  }
 }

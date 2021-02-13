@@ -53,6 +53,12 @@
   }
 }
 
+@media (max-width: 1249px) {
+  .connection--in-catalog {
+    display: none;
+  }
+}
+
 @media (max-width: 1099px) {
   .connection {
     display: none;

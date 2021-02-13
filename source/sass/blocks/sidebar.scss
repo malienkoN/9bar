@@ -5,6 +5,21 @@
   padding: 2rem 0 2rem 2rem;
 }
 
+.sidebar__filter {
+  padding: 1.5rem;
+  display: none;
+  font-size: 2.3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: $blue;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sidebar__item-trigger {
   padding-right: 2rem;
   margin-bottom: 1rem;
@@ -17,10 +32,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.sidebar__item-trigger.has-overflow {
-  margin-bottom: 2rem;
 }
 
 .sidebar__item-icon {
@@ -37,16 +48,12 @@
   padding: 1rem 0 2rem;
 }
 
-.sidebar__item-content.last {
-  padding-bottom: 0;
-}
-
 .sidebar__item-content.has-overflow {
+  padding: 0;
+  margin: 2rem 1.5rem 2rem 0;
+
   max-height: 27.5rem;
   overflow: auto;
-  padding: 0;
-  margin-bottom: 2rem;
-  margin-right: 1.5rem;
 }
 
 .sidebar__item-content.has-overflow::-webkit-scrollbar {
@@ -117,4 +124,80 @@
 .sidebar__item-divider {
   color: #707070;
   margin: 0 .4rem;
+}
+
+@media (max-width: 991px) {
+  .sidebar__item-content {
+    display: none;
+
+    padding: 2rem 0;
+  }
+
+  .sidebar {
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .sidebar__item {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .sidebar__item-trigger {
+    margin: 0;
+    padding-right: 0;
+  }
+
+  .sidebar__item-content > li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .sidebar__item-content.has-overflow {
+    margin: 2rem 1.5rem 1.5rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .sidebar__item-checkbox+label {
+    font-size: 1.5rem;
+  }
+
+  .sidebar__item-trigger {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .sidebar__filter {
+    display: flex;
+  }
+
+  .sidebar form {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  }
+
+  .sidebar__item-trigger {
+    font-size: 2rem;
+  }
+
+  .sidebar__items {
+    display: none;
+    padding: 1rem;
+  }
+
+  .sidebar__item {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .sidebar__item-content.has-overflow {
+    margin: 2rem .5rem 1.5rem 0;
+  }
 }

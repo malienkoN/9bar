@@ -6,6 +6,11 @@ $(document).ready(function () {
        $(this).find('.sidebar__item-icon').toggleClass('rotate');
     });
 
+    /* Mobile filter accordion */
+    $('.sidebar__filter').click(function () {
+       $(this).next('.sidebar__items').slideToggle();
+    });
+
     /* Menu modal */
     let navToggle = $('#navToggle');
     let menuModal = $('#menuModal');
