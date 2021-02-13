@@ -1,26 +1,36 @@
-.sidebar__item {
-  margin-bottom: 3rem;
+.sidebar {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  background-color: $white;
+
+  padding: 2rem 0 2rem 2rem;
 }
 
-//.sidebar__item-trigger {
-//  margin-bottom: 2rem;
-//  font-family: 'Bebas Neue', sans-serif;
-//  color: $blue;
-//  font-size: 2.5rem;
-//  font-weight: 700;
-//  cursor: pointer;
-//}
-
 .sidebar__item-trigger {
-  padding: 2rem;
-  border: 1px solid black;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: $blue;
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar__item-icon {
+  fill: $blue;
+  transition: transform .2s linear;
+}
+
+.sidebar__item-icon.rotate {
+  transform: rotate(180deg);
 }
 
 .sidebar__item-content {
-  padding: 2rem;
-  border: 1px solid black;
-  border-top: none;
-  display: none;
+  display: block;
+  padding: 1rem 0 2rem;
 }
 
 .sidebar__item-content > li {

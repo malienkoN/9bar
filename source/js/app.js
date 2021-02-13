@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
+    /* Sidebar accordion */
     $('.sidebar__item-trigger').click(function () {
        $(this).next('.sidebar__item-content').slideToggle();
+       $(this).find('.sidebar__item-icon').toggleClass('rotate');
     });
 
     /* Menu modal */
@@ -52,8 +54,8 @@ $(document).ready(function () {
     let popupFade = $('.popup-fade');
 
     $('.popup-open').click(function() {
-        popupFade.toggleClass('visible');
         $('body').toggleClass('lock');
+        popupFade.toggleClass('visible');
         return false;
     });
 

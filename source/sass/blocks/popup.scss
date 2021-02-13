@@ -35,11 +35,6 @@
   position: absolute;
   top: 2rem;
   right: 2.4rem;
-  transition: transform .2s linear;
-
-  &:hover {
-    transform: scale(1.2);
-  }
 }
 
 .popup-title {
