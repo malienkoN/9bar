@@ -157,6 +157,17 @@
   }
 }
 
+.section--see-also {
+  margin-bottom: 8.4rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    top: -39rem;
+    left: -5rem;
+  }
+}
+
 @media (max-width: 1499px) {
   .section--about {
 
