@@ -168,6 +168,18 @@
   }
 }
 
+.section--order {
+  margin-bottom: 9.7rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -5.6rem;
+  }
+}
+
 @media (max-width: 1499px) {
   .section--about {
 
