@@ -91,3 +91,56 @@
   cursor: pointer;
   border: none;
 }
+
+@media (max-width: 991px) {
+  .merch {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3rem;
+  }
+
+  .merch__btn-buy {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .merch__title {
+    font-size: 2.8rem;
+  }
+
+  .merch__price span {
+    font-size: 2.3rem;
+  }
+
+  .merch__btn-buy {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .merch__text {
+    font-size: 1.5rem;
+  }
+
+  .merch__title {
+    font-size: 2.5rem;
+  }
+
+  .merch__price span {
+    font-size: 2.2rem;
+  }
+
+  .merch__btn-buy {
+    padding: .8rem 3rem .4rem;
+    font-size: 2.2rem;
+  }
+
+  .merch__action {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .merch__counter {
+    margin-right: 0;
+  }
+}

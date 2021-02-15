@@ -35,3 +35,37 @@
 .tabs__content-item--active {
   display: block;
 }
+
+@media (max-width: 767px) {
+
+  .tabs__content-item {
+    font-size: 1.5rem;
+    padding: 3rem 2rem;
+  }
+
+  .tabs__triggers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+
+  .tabs__triggers-item {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .tabs__content-item {
+    font-size: 1.4rem;
+  }
+
+  .tabs__triggers-item {
+    font-size: 1.8rem;
+  }
+
+  .tabs__triggers {
+    grid-column-gap: .8rem;
+  }
+}
