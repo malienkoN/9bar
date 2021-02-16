@@ -20,6 +20,10 @@
   align-items: center;
 }
 
+.sidebar__item {
+  background-color: $white;
+}
+
 .sidebar__item-trigger {
   padding-right: 2rem;
   margin-bottom: 1rem;

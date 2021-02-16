@@ -5,20 +5,20 @@
   grid-column-gap: 3rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .see-also {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 3rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .see-also {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 549px) {
   .see-also {
     grid-template-columns: 1fr;
 
