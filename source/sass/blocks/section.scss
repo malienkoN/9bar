@@ -260,6 +260,14 @@
       bottom: -25rem;
     }
   }
+
+  .section--order {
+
+    &:before {
+      @include waves;
+      left: -15rem;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -333,6 +341,14 @@
     &:after {
       @include waves;
       right: -20rem;
+    }
+  }
+
+  .section--order {
+
+    &:before {
+      @include waves;
+      left: -20rem;
     }
   }
 }
