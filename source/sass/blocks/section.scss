@@ -179,6 +179,23 @@
   }
 }
 
+.section--our-works {
+  margin-bottom: 6.5rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    top: 28rem;
+    left: -7rem;
+  }
+
+  &:after {
+    @include waves;
+    bottom: 15rem;
+    right: -7rem;
+  }
+}
+
 @media (max-width: 1499px) {
   .section--about {
 
@@ -254,7 +271,6 @@
   .section--our-team {
 
     &:after {
-      @include waves;
       right: -10rem;
       bottom: -25rem;
     }
@@ -263,8 +279,20 @@
   .section--order {
 
     &:before {
-      @include waves;
       left: -15rem;
+    }
+  }
+
+  .section--our-works {
+
+    &:before {
+      top: 25rem;
+      left: -14rem;
+    }
+
+    &:after {
+      bottom: 10rem;
+      right: -14rem;
     }
   }
 }
@@ -338,7 +366,6 @@
   .section--our-team {
 
     &:after {
-      @include waves;
       right: -20rem;
     }
   }
@@ -346,8 +373,20 @@
   .section--order {
 
     &:before {
-      @include waves;
       left: -20rem;
+    }
+  }
+
+  .section--our-works {
+
+    &:before {
+      top: 20rem;
+      left: -20rem;
+    }
+
+    &:after {
+      bottom: 10rem;
+      right: -20rem;
     }
   }
 }

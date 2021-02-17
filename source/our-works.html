@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header header--blue">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="header__left">
+                <button class="burger" id="navToggle" type="button" aria-label="Меню">
+                    <span class="burger__line burger__line--blue">1</span>
+                    <span class="burger__line burger__line--blue">2</span>
+                    <span class="burger__line burger__line--blue">3</span>
+                </button>
+
+                <a class="header__logo-link" href="index.html">
+                    <img class="header__logo header__logo--second header__logo--static img" src="img/logo-black.png" alt="9 Бар">
+                </a>
+            </div>
+
+            <div class="header__right">
+
+                <ul class="action">
+                    <li class="action__item has-dropdown">
+                        <!-- has-drop-down -->
+                        <a class="action__link action__link-dropdown" href="tel:0933758828">
+                            <svg class="action__icon action__icon--blue" width="20" height="20" viewBox="0 0 20 20">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 (093) 375 8828
+                            <svg class="action__icon action__icon-dropdown action__icon--blue" width="11.243" height="6.942" viewBox="0 0 11.243 6.942">
+                                <use xlink:href="img/sprite.svg#icon-drop-down"></use>
+                            </svg>
+                        </a>
+
+                        <!-- dropdown -->
+                        <ul class="dropdown dropdown--blue">
+                            <li class="dropdown__item">
+                                <svg class="dropdown__icon dropdown__icon--white" width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                </svg>
+
+                                <a class="dropdown__link dropdown__link--white" href="tel:0933758828">+38 (093) 375 8828</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <svg class="dropdown__icon dropdown__icon--white" width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                </svg>
+
+                                <a class="dropdown__link dropdown__link--white" href="tel:0933758828">+38 (093) 375 8828</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <svg class="dropdown__icon dropdown__icon--white" width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                </svg>
+
+                                <a class="dropdown__link dropdown__link--white" href="tel:0933758828">+38 (093) 375 8828</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="action__item has-search-dropdown">
+                        <a class="action__link action__link-search__dropdown" href="#">
+                            <svg class="action__icon action__icon--blue" width="18" height="18" viewBox="0 0 18 18">
+                                <use xlink:href="img/sprite.svg#icon-search"></use>
+                            </svg>
+                            Поиск
+                        </a>
+
+                        <form class="search-dropdown" action="/">
+                            <input class="search-dropdown__input search-dropdown__input--blue" type="text" name="search" placeholder="Поиск по сайту…">
+                            <button class="search-dropdown__btn btn" type="submit">
+                                <svg class="action__icon--blue" width="22" height="22" viewBox="0 0 25 25">
+                                    <use xlink:href="img/sprite.svg#icon-search-dropdown"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </li>
+
+                    <li class="action__item">
+                        <ul class="action__lang">
+                            <li class="action__lang-item action__lang-item--blue">
+                                <a class="action__lang-link action__lang-link--blue" href="#"> RU </a>
+                            </li>
+
+                            <li class="action__lang-item action__lang-item--blue">
+                                <a class="action__lang-link" href="#"> UA </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="action__item">
+                        <a class="action__link" href="#">
+                            <svg class="action__icon action__icon--blue" width="23" height="23" viewBox="0 0 23 23">
+                                <use xlink:href="img/sprite.svg#icon-catalog"></use>
+                            </svg>
+                            Каталог
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- connection -->
+<div class="connection">
+    <ul class="connection__list">
+        <li class="connection__item">
+            <!-- has popup open -->
+            <a class="connection__link popup-open" href="tel:0933758828">
+                <svg width="29" height="29" viewBox="0 0 29 29">
+                    <use xlink:href="img/sprite.svg#icon-phone-connection"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="connection__item">
+            <a class="connection__link" href="https://t.me/Ivan_mrgrdsk">
+                <svg width="32" height="27" viewBox="0 0 32 27">
+                    <use xlink:href="img/sprite.svg#icon-telegram-connection"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="connection__item">
+            <a class="connection__link" href="viber://chat?number=380933758828">
+                <svg width="34.142" height="36.005" viewBox="0 0 34.142 36.005">
+                    <use xlink:href="img/sprite.svg#icon-viber-connection"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<main class="main">
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item" aria-current="page">Название товара</li>
+        </ol>
+    </nav>
+</div>
+
+<section class="section section--our-works">
+    <div class="container">
+        <h2 class="title">
+            Название объкта
+            <span class="title__sub">Работы</span>
+        </h2>
+
+        <div class="our-works">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <ul class="our-works__list">
+                        <li>
+                            <svg width="31" height="31" viewBox="0 0 31 31">
+                                <use xlink:href="img/sprite.svg#icon-size"></use>
+                            </svg>
+                            120 м2
+                        </li>
+                        <li>
+                            <svg width="27" height="36" viewBox="0 0 27 36">
+                                <use xlink:href="img/sprite.svg#icon-pin"></use>
+                            </svg>
+                            Днепр
+                        </li>
+                        <li>
+                            <svg width="30.687" height="35.071" viewBox="0 0 30.687 35.071">
+                                <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                            </svg>
+                            <time datetime="2020-03-20 19:00">20.03.20</time>
+                        </li>
+                    </ul>
+
+                    <h2 class="our-works__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    <div class="our-works__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a data-fancybox="gallery" href="img/our-works-img.jpg">
+                        <img class="img" src="img/our-works-img.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__logo-wrapper">
+                <img class="footer__logo img" src="img/logo-big.png" width="199" height="99" alt="9 Бар">
+                <p class="footer__logo-text">
+                    Продажа и установка
+                    кондиционеров
+                </p>
+            </div>
+
+            <div class="social">
+                <ul class="social__list social__list--footer">
+                    <li class="social__item">
+                        <a class="social__link social__link--white" href="mailto:info@9bar.dp.ua">
+                            <svg class="social__icon social__icon--white" width="19" height="15" viewBox="0 0 19 15">
+                                <use xlink:href="img/sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@9bar.dp.ua
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--white" href="https://www.instagram.com/9bar_dp/?hl=cs" target="_blank">
+                            <svg class="social__icon social__icon--white" width="18" height="18" viewBox="0 0 18 18">
+                                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                            9bar_dp
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--white" href="tel:0933758828">
+                            <svg class="social__icon social__icon--white" width="18" height="18" viewBox="0 0 18 18">
+                                <use xlink:href="img/sprite.svg#icon-phone-social"></use>
+                            </svg>
+                            +38 (093) 375 8828
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--white" href="tel:0933758828">
+                            <svg class="social__icon social__icon--white" width="18" height="18" viewBox="0 0 18 18">
+                                <use xlink:href="img/sprite.svg#icon-phone-social"></use>
+                            </svg>
+                            +38 (093) 375 8828
+                        </a>
+                    </li>
+
+                    <li class="social__items-bottom">
+                        <div class="social__item">
+                            <a class="social__link social__link--white" href="viber://chat?number=380933758828" target="_blank">
+                                <svg class="social__icon social__icon--white social__icon--viber" width="21" height="23" viewBox="0 0 21 23">
+                                    <use xlink:href="img/sprite.svg#icon-viber"></use>
+                                </svg>
+                                Viber
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a class="social__link social__link--white" href="https://t.me/Ivan_mrgrdsk" target="_blank">
+                                <svg class="social__icon social__icon--white social__icon--telegram" width="22" height="20" viewBox="0 0 22 20">
+                                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                                </svg>
+                                Telegram
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li><a class="footer__nav-link" href="#">Главная</a></li>
+                <li><a class="footer__nav-link" href="#">О нас</a></li>
+                <li><a class="footer__nav-link" href="#">Каталог</a></li>
+                <li><a class="footer__nav-link" href="#">Услуги</a></li>
+                <li><a class="footer__nav-link" href="#">партнерам</a></li>
+                <li><a class="footer__nav-link" href="#">наши работы</a></li>
+                <li><a class="footer__nav-link" href="#">отзывы</a></li>
+                <li><a class="footer__nav-link" href="#">Новости</a></li>
+                <li><a class="footer__nav-link" href="#">вакансии</a></li>
+                <li><a class="footer__nav-link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__copyright">
+            <p>&copy;&nbsp;2021 9bar.dp.ua. Все права защищены</p>
+            <a href="https://web-art.dp.ua/">Разработано в web.art</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Modals -->
+<div class="modal" id="menuModal">
+    <div class="container-modal">
+
+        <div class="modal__inner">
+            <div class="modal__item">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Партнерам</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Наши работы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Новости</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="modal__item">
+                <div class="social">
+                    <ul class="social__list social__list--first">
+                        <li class="social__item">
+                            <a class="social__link" href="mailto:info@9bar.dp.ua">
+                                <svg class="social__icon" width="19" height="15" viewBox="0 0 19 15">
+                                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                                </svg>
+                                info@9bar.dp.ua
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://www.instagram.com/9bar_dp/?hl=cs" target="_blank">
+                                <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
+                                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                9bar_dp
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="tel:0933758828">
+                                <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
+                                    <use xlink:href="img/sprite.svg#icon-phone-social"></use>
+                                </svg>
+                                +38 (093) 375 8828
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="tel:0933758828">
+                                <svg class="social__icon" width="18" height="18" viewBox="0 0 18 18">
+                                    <use xlink:href="img/sprite.svg#icon-phone-social"></use>
+                                </svg>
+                                +38 (093) 375 8828
+                            </a>
+                        </li>
+
+                        <li class="social__items-bottom">
+                            <div class="social__item">
+                                <a class="social__link" href="viber://chat?number=380933758828" target="_blank">
+                                    <svg class="social__icon social__icon--viber" width="21" height="23" viewBox="0 0 21 23">
+                                        <use xlink:href="img/sprite.svg#icon-viber"></use>
+                                    </svg>
+                                    Viber
+                                </a>
+                            </div>
+                            <div class="social__item">
+                                <a class="social__link" href="https://t.me/Ivan_mrgrdsk" target="_blank">
+                                    <svg class="social__icon social__icon--telegram" width="22" height="20" viewBox="0 0 22 20">
+                                        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                                    Telegram
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-fade">
+    <div class="popup">
+        <button class="popup-close btn" type="button">
+            <svg width="25" height="25" viewBox="0 0 25 25">
+                <use xlink:href="img/sprite.svg#icon-popup-close"></use>
+            </svg>
+        </button>
+        <h4 class="popup-title">Заказать обратный звонок</h4>
+
+        <form class="popup-form" action="/" method="get">
+
+            <div class="popup-form__inner">
+                <input class="popup-form__input" type="text" name="name" placeholder="Имя">
+                <input class="popup-form__input" type="tel" name="tel" placeholder="+38 (__) ___-__-__ ">
+            </div>
+
+            <div class="btn-wrap btn-wrap--center">
+                <button class="popup-btn btn btn--default" type="submit">Заказать звонок</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
