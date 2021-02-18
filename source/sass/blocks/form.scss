@@ -14,6 +14,15 @@
   line-height: 1.2;
 }
 
+.form__title-blue {
+  color: $blue;
+  font-size: 2.9rem;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
 .form__inner {
   margin-bottom: 3.3rem;
   display: grid;
@@ -95,6 +104,12 @@
 @media (max-width: 1499px) {
   .form__title {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .form__title-blue {
+    font-size: 2.5rem;
   }
 }
 
