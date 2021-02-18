@@ -213,6 +213,23 @@
   }
 }
 
+.section--company-reviews {
+  margin-bottom: 12rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    top: 28rem;
+    left: -7rem;
+  }
+
+  &:after {
+    @include waves;
+    bottom: 10rem;
+    right: -7rem;
+  }
+}
+
 @media (max-width: 1499px) {
   .section--about {
 
@@ -325,6 +342,19 @@
       right: -20rem;
     }
   }
+
+  .section--company-reviews {
+
+    &:before {
+      top: 25rem;
+      left: -14rem;
+    }
+
+    &:after {
+      bottom: 5rem;
+      right: -14rem;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -416,6 +446,19 @@
 
     &:after {
       bottom: 10rem;
+      right: -20rem;
+    }
+  }
+
+  .section--company-reviews {
+
+    &:before {
+      top: 15rem;
+      left: -20rem;
+    }
+
+    &:after {
+      bottom: 0;
       right: -20rem;
     }
   }
