@@ -198,6 +198,19 @@
 
 .section--selection {
   margin-bottom: 11rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    bottom: -42rem;
+    left: -7rem;
+  }
+
+  &:after {
+    @include waves;
+    top: 38rem;
+    right: -7rem;
+  }
 }
 
 @media (max-width: 1499px) {
@@ -297,6 +310,19 @@
     &:after {
       bottom: 10rem;
       right: -14rem;
+    }
+  }
+
+  .section--selection {
+
+    &:before {
+      bottom: -30rem;
+      left: -20rem;
+    }
+
+    &:after {
+      top: 30rem;
+      right: -20rem;
     }
   }
 }
