@@ -230,6 +230,23 @@
   }
 }
 
+.section--vacancies {
+  margin-bottom: 20rem;
+  position: relative;
+
+  &:before {
+    @include waves;
+    top: 16rem;
+    left: -17rem;
+  }
+
+  &:after {
+    @include waves;
+    bottom: -16.5rem;
+    right: -10rem;
+  }
+}
+
 @media (max-width: 1499px) {
   .section--about {
 
@@ -355,6 +372,17 @@
       right: -14rem;
     }
   }
+
+  .section--vacancies {
+
+    &:before {
+      left: -22rem;
+    }
+
+    &:after {
+      right: -15rem;
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -460,6 +488,19 @@
     &:after {
       bottom: 0;
       right: -20rem;
+    }
+  }
+
+  .section--vacancies {
+
+    &:before {
+      left: -22rem;
+      top: 10rem;
+    }
+
+    &:after {
+      right: -15rem;
+      bottom: -10rem;
     }
   }
 }

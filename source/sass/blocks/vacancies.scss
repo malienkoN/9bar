@@ -1,0 +1,70 @@
+.vacancies {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3.5rem;
+}
+
+.vacancies__item {
+  background-color: $white;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .16);
+  padding: 3rem 1rem 3rem 3rem;
+}
+
+.vacancies__title {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $blue;
+}
+
+.vacancies__salary {
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.vacancies__text {
+  margin-bottom: 2.5rem;
+  font-size: 1.7rem;
+}
+
+.vacancies__link {
+  color: $blue;
+}
+
+@media (max-width: 1199px) {
+  .vacancies__title {
+    font-size: 2.2rem;
+  }
+
+  .vacancies__salary {
+    font-size: 1.6rem;
+  }
+
+  .vacancies__text {
+    font-size: 1.6rem;
+  }
+
+  .vacancies__link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .vacancies {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .vacancies__title {
+    font-size: 2rem;
+  }
+
+  .vacancies__item {
+    padding: 3rem 2rem;
+  }
+}
