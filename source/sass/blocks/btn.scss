@@ -67,3 +67,23 @@
 .btn--uppercase {
   text-transform: uppercase;
 }
+
+.btn--rectangle {
+  border-radius: 0;
+  font-size: 1.9rem;
+  padding: 2rem 6rem;
+}
+
+@media (max-width: 1199px) {
+  .btn--rectangle {
+    font-size: 1.8rem;
+    padding: 1.5rem 4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .btn--rectangle {
+    font-size: 1.7rem;
+    padding: 1.5rem 3rem;
+  }
+}

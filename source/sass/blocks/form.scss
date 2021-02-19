@@ -32,6 +32,15 @@
   text-align: center;
 }
 
+.form__title-contacts {
+  margin-bottom: 3.9rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: $blue;
+  text-align: center;
+}
+
 .form__inner {
   margin-bottom: 3.3rem;
   display: grid;
@@ -64,6 +73,22 @@
 .form__textarea {
   resize: none;
   padding-top: 1.6rem;
+}
+
+.form__input--contacts,
+.form__textarea--contacts {
+  font-size: 1.7rem;
+  padding: 0 3.5rem;
+  background-color: $white;
+  border: 1px solid #707070;
+
+  &::placeholder {
+    color: #6a6a6a;
+  }
+}
+
+.form__textarea--contacts {
+  padding-top: 1.1rem;
 }
 
 .form__connection {
@@ -145,6 +170,16 @@
   .form__title-vacancy {
     font-size: 2.7rem;
   }
+
+  .form__input--contacts,
+  .form__textarea--contacts {
+    font-size: 1.6rem;
+    padding: 0 2rem;
+  }
+
+  .form__textarea--contacts {
+    padding-top: 1rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -173,5 +208,10 @@
 
   .form__title {
     font-size: 3rem;
+  }
+
+  .form__title-contacts {
+    font-size: 3rem;
+    margin-bottom: 3rem;
   }
 }

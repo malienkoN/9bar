@@ -1,0 +1,63 @@
+.contacts {
+  margin-top: 7.2rem;
+  margin-bottom: 11.2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 6rem;
+
+  .social {
+    margin-top: 3rem;
+  }
+}
+
+.contacts .form {
+  width: auto;
+  padding: 6rem;
+  margin: 0;
+  box-shadow: 0 3px 60px rgba(0, 0, 0, .16);
+}
+
+.contacts .form__inner {
+  margin-bottom: 2.8rem;
+  grid-template-rows: 6.4rem 6.4rem 6.4rem 9.9rem;
+  grid-column-gap: 2.5rem;
+}
+
+@media (max-width: 1199px) {
+  .contacts .form__inner {
+    grid-template-rows: 5rem 5rem 5rem 8rem;
+    grid-column-gap: 2.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .contacts {
+    grid-template-columns: 1fr;
+    grid-row-gap: 7rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .contacts .form {
+    padding: 3rem 2rem;
+    box-shadow: none;
+  }
+
+  .contacts .social__items-bottom {
+    justify-content: flex-start;
+  }
+
+  .contacts .social__item--viber {
+    margin-right: 1rem;
+  }
+
+  .contacts .form__inner {
+    grid-template-rows: 4rem 4rem 4rem 8rem;
+  }
+}
+
+@media (max-width: 429px) {
+  .contacts .form {
+    padding: 3rem 1rem;
+  }
+}
